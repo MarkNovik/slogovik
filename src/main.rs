@@ -66,6 +66,10 @@ fn main() {
             }
         }
 
+        Some("help") => {
+            println!("{}", usage());
+        }
+
         Some(_) => syllabize(&args),
     }
 }
@@ -93,6 +97,7 @@ fn usage() -> String {
         "\tsyl [args...] - default mode, syllabize each word in args, chosen if none specified."
     )
     .unwrap();
+    writeln!(usage, "\thelp - prints this help message.").unwrap();
     usage
 }
 
