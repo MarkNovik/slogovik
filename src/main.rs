@@ -97,7 +97,7 @@ fn usage() -> String {
         "\tsyl [args...] - default mode, syllabize each word in args, chosen if none specified."
     )
     .unwrap();
-    writeln!(usage, "\thelp - prints this help message.").unwrap();
+    writeln!(usage, "\thelp          - prints this help message.").unwrap();
     usage
 }
 
