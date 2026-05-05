@@ -4,7 +4,9 @@ version = "1.0.0"
 edition = "2024"
 
 [dependencies]
-zip = { version = "8.6.0", default-features = false, features = ["deflate"] }
+zip = { version = "8.6.0", default-features = false, features = [
+    "deflate-flate2-zlib-rs",
+] }
 
 [profile.prod]
 inherits = "release"

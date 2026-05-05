@@ -85,19 +85,19 @@ fn usage() -> String {
     writeln!(usage, "Modes:").unwrap();
     writeln!(
         usage,
-        "\trepl          - REPL mode, enter a word and get it syllabalized."
+        "\trepl\t\t- REPL mode, enter a word and get it syllabalized."
     )
     .unwrap();
     writeln!(
         usage,
-        "\tshowcase [n]  - showcase, prints n syllabalized russian and ukrainian words, default n = 5."
+        "\tshowcase [n]\t- showcase, prints n syllabalized russian and ukrainian words, default n = 5."
     ).unwrap();
     writeln!(
         usage,
-        "\tsyl [args...] - default mode, syllabize each word in args, chosen if none specified."
+        "\tsyl [args...]\t- default mode, syllabize each word in args, chosen if none specified."
     )
     .unwrap();
-    writeln!(usage, "\thelp          - prints this help message.").unwrap();
+    writeln!(usage, "\thelp\t\t- prints this help message.").unwrap();
     usage
 }
 
